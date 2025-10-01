@@ -22,7 +22,7 @@ CORS(app, expose_headers='Content-Disposition')
 
 # Render는 /var/task 경로에서 실행될 수 있으므로, 세션 파일 경로를 명시적으로 지정
 # ★★★ 중요: 여기에 본인 아이디를 입력하고, 이 이름으로 된 세션 파일을 GitHub에 업로드해야 합니다 ★★★
-INSTAGRAM_USERNAME = "여기에_인스타그램_아이디_입력"
+INSTAGRAM_USERNAME = "onlee1425"
 
 L = instaloader.Instaloader(
     download_video_thumbnails=False,
@@ -181,4 +181,5 @@ def download_all():
 # Render는 gunicorn으로 직접 app을 실행하므로 이 부분은 로컬 테스트용으로만 사용됩니다.
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
+
 
